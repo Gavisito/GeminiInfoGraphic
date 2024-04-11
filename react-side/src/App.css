@@ -301,3 +301,74 @@ p {
 .footer .footer-bottom .copyright a:hover {
   color: #007bff;
 }
+
+.form-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.form-container .dd-title {
+  color: black;
+  padding: 2.5%;
+}
+.form-container .dropdown {
+  width: 80%;
+  height: 7.5vh;
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  border: 1px solid black;
+  padding-left: 2.5%;
+}
+.form-container form {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.form-container label {
+  font-size: clamp(20px, 2vw, 30px);
+  color: black;
+  margin-top: 2.5%;
+}
+.form-container input, .form-container textarea {
+  border-radius: 25px;
+  width: 100%;
+  height: 7.5vh;
+  margin-top: 1.5%;
+  background-color: #e6e6e6;
+}
+.form-container button {
+  width: 100%;
+  margin: 5% auto;
+  padding: 2% 5%;
+  display: block; /* Ensure the button is displayed as a block element */
+  font-size: clamp(15px, 2vw, 25px);
+  color: white;
+  background-color: #2e2e2e;
+}

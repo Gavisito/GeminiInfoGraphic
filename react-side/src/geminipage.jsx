@@ -1,11 +1,11 @@
 // GeminiPage.jsx
+import GeminiForm from './components/geminiform.jsx';
 
 import React from 'react';
 
 const GeminiPage = () => {
     return (
-            <h1>Gemini Page</h1>
-
+        <GeminiForm/>
     );
 };
 
