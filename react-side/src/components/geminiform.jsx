@@ -20,7 +20,7 @@ const GeminiForm = () => {
 
   return (
     <div className="form-container">
-        <h1 className='dd-title'>Select Your Infographic Purpose</h1>
+        <p className='dd-title'>What is This Infographic About?</p>
         <select value={selectedOption} onChange={handleSelectChange} className="dropdown">
             <option value="">Select an option</option>
             <option value="company">Company</option>

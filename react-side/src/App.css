@@ -322,10 +322,14 @@ p {
           justify-content: center;
   padding-top: 150px;
   padding-bottom: 150px;
+  /* Media query for screens smaller than 480px */
 }
 .form-container .dd-title {
   color: black;
   padding: 2.5%;
+  font-size: 5vh;
+  text-decoration: underline;
+  font-weight: bolder;
 }
 .form-container .dropdown {
   width: 80%;
@@ -334,6 +338,7 @@ p {
   border-radius: 25px;
   border: 1px solid black;
   padding-left: 2.5%;
+  font-size: clamp(13px, 2vw, 25px);
 }
 .form-container form {
   width: 80%;
@@ -361,14 +366,63 @@ p {
   width: 100%;
   height: 7.5vh;
   margin-top: 1.5%;
+  border: 1px solid black;
   background-color: #e6e6e6;
 }
 .form-container button {
   width: 100%;
   margin: 5% auto;
-  padding: 2% 5%;
+  padding: 2vh 5%;
   display: block; /* Ensure the button is displayed as a block element */
   font-size: clamp(15px, 2vw, 25px);
   color: white;
   background-color: #2e2e2e;
+}
+@media screen and (max-width: 975px) {
+  .form-container .dd-title {
+    font-size: 4.5vh;
+  }
+}
+@media screen and (max-width: 865px) {
+  .form-container .dd-title {
+    font-size: 3.75vh;
+  }
+}
+@media screen and (max-width: 735px) {
+  .form-container .dd-title {
+    font-size: 3.25vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-container .dd-title {
+    font-size: 2.5vh;
+  }
+  .form-container label {
+    font-size: medium;
+  }
+  .form-container .dropdown, .form-container input, .form-container textarea {
+    height: 6.5vh;
+  }
+}
+@media screen and (max-width: 475px) {
+  .form-container .dd-title {
+    font-size: 2vh;
+  }
+  .form-container label {
+    font-size: small;
+  }
+  .form-container .dropdown, .form-container input, .form-container textarea {
+    height: 5.75vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-container .dd-title {
+    font-size: 1.95vh;
+  }
+  .form-container label {
+    font-size: 12px;
+  }
+  .form-container .dropdown, .form-container input, .form-container textarea {
+    height: 5vh;
+  }
 }
